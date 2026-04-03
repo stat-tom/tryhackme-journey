@@ -4,9 +4,9 @@ Core Linux skills: command-line navigation, file permissions, and shell scriptin
 
 ## Rooms
 
-- [ ] Linux Fundamentals Part 1
-- [ ] Linux Fundamentals Part 2
-- [ ] Linux Fundamentals Part 3
+- [x] Linux Fundamentals Part 1
+- [x] Linux Fundamentals Part 2
+- [x] Linux Fundamentals Part 3
 
 ## Notes
 
