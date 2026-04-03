@@ -28,3 +28,14 @@ Introduction to the field and the two main disciplines: offensive and defensive 
 - Applied rate limits so no one else could overwhelm the system.
 - Updated security rules.
 - Applied additional security measures to help prevent this from occurring again.
+
+### Search Skills
+
+- This lesson covered common information sources used by cyber security professionals.
+- The information landscape changes constantly, so following relevant security groups helps surface new sources over time.
+- Visited these sites:
+- [Shodan](https://www.shodan.io/) - A search engine for internet-connected devices and exposed services.
+- [VirusTotal](https://www.virustotal.com/) - Scans files, domains, URLs, and IPs with multiple security engines.
+- [Have I Been Pwned](https://haveibeenpwned.com/) - Checks whether an email or phone number appears in known data breaches.
+- [Exploit Database](https://www.exploit-db.com/) - A public archive of exploits and proof-of-concept security research.
+- [CVE](https://www.cve.org/) - The standard reference list for publicly disclosed security vulnerabilities.
