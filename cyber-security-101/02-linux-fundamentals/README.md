@@ -48,3 +48,41 @@ What these commands do:
 - `grep "password" notes.txt` searches for matching text inside a file.
 - `echo "hello" > hello.txt` writes text into a file using output redirection.
 - `cat hello.txt | grep hello` passes command output through a pipe to filter results.
+
+### Linux Fundamentals Part 2
+
+Built on the first room by moving from simple navigation to practical system usage. The room covered connecting to a Linux machine over SSH, using command flags to change command behavior, working further with the filesystem, understanding Linux permissions, and learning the purpose of common system directories.
+
+Key topics:
+
+- Connecting to remote Linux machines using SSH.
+- Using flags and switches such as `-l`, `-a`, and `-h` to modify command output.
+- Creating, moving, copying, and deleting files and directories.
+- Reading and interpreting Linux file permissions for users, groups, and others.
+- Recognizing common directories such as `/etc`, `/home`, `/var`, and `/tmp`.
+
+Sample commands:
+
+```bash
+ssh user@10.10.10.10
+cp notes.txt backup-notes.txt
+mv backup-notes.txt /tmp/backup-notes.txt
+mkdir projects
+touch projects/todo.txt
+chmod 644 projects/todo.txt
+rm backup-notes.txt
+file /bin/bash
+stat projects/todo.txt
+```
+
+What these commands do:
+
+- `ssh user@10.10.10.10` connects to a remote Linux machine over SSH.
+- `cp notes.txt backup-notes.txt` copies a file.
+- `mv backup-notes.txt /tmp/backup-notes.txt` moves or renames a file.
+- `mkdir projects` creates a new directory.
+- `touch projects/todo.txt` creates an empty file.
+- `chmod 644 projects/todo.txt` sets standard read/write permissions for the owner and read-only for others.
+- `rm backup-notes.txt` deletes a file that is no longer needed.
+- `file /bin/bash` identifies the type of a file or binary.
+- `stat projects/todo.txt` shows detailed metadata, including permissions and timestamps.
