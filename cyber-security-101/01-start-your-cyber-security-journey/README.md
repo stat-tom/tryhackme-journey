@@ -4,9 +4,9 @@ Introduction to the field and the two main disciplines: offensive and defensive 
 
 ## Rooms
 
-- [ ] Offensive Security Intro
-- [ ] Defensive Security Intro
-- [ ] Search Skills
+- [x] Offensive Security Intro
+- [x] Defensive Security Intro
+- [x] Search Skills
 
 ## Notes
 
