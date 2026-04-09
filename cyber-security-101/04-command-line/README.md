@@ -275,3 +275,105 @@ copy *.md C:\Markdown
 ```
 
 This command is useful when you want to bulk-copy files with the same extension into a central folder.
+
+#### `tasklist`
+Displays a list of currently running processes on the system.
+
+Example:
+
+```cmd
+tasklist
+```
+
+Use this to see active processes, their process IDs, and memory usage.
+
+#### `tasklist /FI "imagename eq sshd.exe"`
+Displays only the processes that match the filter, in this case processes named `sshd.exe`.
+
+Example:
+
+```cmd
+tasklist /FI "imagename eq sshd.exe"
+```
+
+Flags used:
+
+- `/FI`: Apply a filter to the process list output.
+
+This is useful when you want to quickly check whether a specific process is running.
+
+#### `taskkill /PID 4567`
+Terminates the process with the specified process ID.
+
+Example:
+
+```cmd
+taskkill /PID 4567
+```
+
+Common related flag:
+
+- `/F`: Force termination of the process if it does not close normally.
+
+Use this carefully to stop a specific process after identifying its PID with `tasklist`.
+
+#### `chkdsk`
+Checks the file system and disk volumes for errors and can identify bad sectors.
+
+Examples:
+
+```cmd
+chkdsk
+chkdsk C:
+```
+
+This is useful for detecting file system problems or disk issues during troubleshooting.
+
+#### `driverquery`
+Displays a list of installed device drivers on the system.
+
+Examples:
+
+```cmd
+driverquery
+driverquery /v
+```
+
+Use this to review loaded drivers and gather host information during system enumeration.
+
+#### `sfc /scannow`
+Scans protected system files for corruption and repairs them automatically when possible.
+
+Example:
+
+```cmd
+sfc /scannow
+```
+
+This is commonly used when Windows system files are suspected to be damaged or altered.
+
+#### `shutdown /s`
+Shuts down the computer.
+
+Example:
+
+```cmd
+shutdown /s
+```
+
+Common related flag:
+
+- `/t 0`: Shut down immediately without a delay.
+
+Use this to power off the system from the command line.
+
+#### `shutdown /a`
+Aborts a pending system shutdown.
+
+Example:
+
+```cmd
+shutdown /a
+```
+
+This only works if a shutdown has already been scheduled and is still waiting to occur.
