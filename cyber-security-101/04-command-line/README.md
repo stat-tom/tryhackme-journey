@@ -132,3 +132,146 @@ Flags used:
 - `-n`: Show addresses and port numbers numerically.
 
 This is especially useful during incident response or local host enumeration to map open ports back to running processes.
+
+#### `cd`
+Changes the current directory in Command Prompt.
+
+Examples:
+
+```cmd
+cd C:\Users\student
+cd Documents
+```
+
+Use this to navigate into a specific folder before running other commands.
+
+#### `cd ..`
+Moves up one level from the current directory to its parent directory.
+
+Example:
+
+```cmd
+cd ..
+```
+
+This is useful for quickly stepping back through the folder structure.
+
+#### `dir`
+Lists the files and folders in the current directory.
+
+Example:
+
+```cmd
+dir
+```
+
+Use this to see the contents of the current working directory.
+
+#### `dir /a`
+Lists all files and folders, including hidden and system items.
+
+Example:
+
+```cmd
+dir /a
+```
+
+Useful when you want to reveal items not shown in a normal directory listing.
+
+#### `dir /s`
+Lists files and folders in the current directory and all subdirectories recursively.
+
+Example:
+
+```cmd
+dir /s
+```
+
+Use this when you need a full recursive view of a directory tree.
+
+#### `tree`
+Displays the folder structure of a path in a tree-style layout.
+
+Examples:
+
+```cmd
+tree
+tree C:\Users\student\Documents
+```
+
+This is useful for visualizing nested directories.
+
+#### `mkdir`
+Creates a new directory.
+
+Examples:
+
+```cmd
+mkdir notes
+mkdir C:\Temp\Logs
+```
+
+Use this to create folders for organizing files or lab work.
+
+#### `rmdir`
+Removes a directory. The directory usually needs to be empty unless additional flags are used.
+
+Examples:
+
+```cmd
+rmdir oldnotes
+rmdir /s /q C:\Temp\OldLogs
+```
+
+Flags used in the second example:
+
+- `/s`: Remove the directory and all contents.
+- `/q`: Quiet mode without confirmation prompts.
+
+Use this carefully, especially with `/s`, because it can remove entire directory trees.
+
+#### `type`
+Displays the contents of a text file in the terminal.
+
+Example:
+
+```cmd
+type README.md
+```
+
+Useful for quickly reading small text files from Command Prompt.
+
+#### `move`
+Moves a file or folder from one location to another. It can also be used to rename files.
+
+Examples:
+
+```cmd
+move notes.txt C:\Temp\
+move draft.txt final.txt
+```
+
+Use this to reorganize files or rename them without opening File Explorer.
+
+#### `del`
+Deletes one or more files.
+
+Examples:
+
+```cmd
+del notes.txt
+del *.tmp
+```
+
+Use this carefully because deleted files are not moved to the Recycle Bin when removed from Command Prompt.
+
+#### `copy *.md C:\Markdown`
+Copies all Markdown files in the current directory to `C:\Markdown` using a wildcard pattern.
+
+Example:
+
+```cmd
+copy *.md C:\Markdown
+```
+
+This command is useful when you want to bulk-copy files with the same extension into a central folder.
