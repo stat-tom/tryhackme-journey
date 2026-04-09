@@ -1,24 +1,3 @@
-# Section 04 – Command Line
-
-Working with the Windows Command Prompt, PowerShell, and Linux shells.
-
-## Rooms
-
-- [x] Windows Command Line
-- [ ] Windows PowerShell
-- [ ] Linux Shells
-
-## Notes
-
-- [Windows Command Line](./Windows%20Command%20Line/README.md)
-- [Windows PowerShell](./Windows%20PowerShell/README.md)
-- [Linux Shells](./Linux%20Shells/README.md)
-
-The detailed Windows Command Line notes have been moved into the Windows Command Line room folder.
-
-PowerShell and Linux Shell notes can be added in their own room folders as you complete those rooms.
-
-*** Add File: d:\Repos\Cybersecurity\tryhackme-journey\cyber-security-101\04-command-line\Windows Command Line\README.md
 # Windows Command Line
 
 Detailed notes for the Windows Command Line room.
@@ -396,21 +375,3 @@ shutdown /a
 ```
 
 This only works if a shutdown has already been scheduled and is still waiting to occur.
-
-*** Add File: d:\Repos\Cybersecurity\tryhackme-journey\cyber-security-101\04-command-line\Windows PowerShell\README.md
-# Windows PowerShell
-
-Notes for the Windows PowerShell room.
-
-## Notes
-
-<!-- Add PowerShell notes here -->
-
-*** Add File: d:\Repos\Cybersecurity\tryhackme-journey\cyber-security-101\04-command-line\Linux Shells\README.md
-# Linux Shells
-
-Notes for the Linux Shells room.
-
-## Notes
-
-<!-- Add Linux shell notes here -->
