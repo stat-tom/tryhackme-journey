@@ -51,4 +51,12 @@ Notes for alert triage, reporting, operational workflows, and SOC performance tr
 
 You were granted access to the dashboard in the TryHackMe room, and you will need it to complete most of the tasks. Open the attached website in a separate window, familiarise yourself with it, and then move on to the next task.
 
+The dashboard gives you the main analyst view for working through alerts. At a glance, you can see the alert time, name, severity, current status, and verdict. This helps an L1 analyst quickly decide which items need immediate attention, which ones are already being worked, and which have been closed as true positives or false positives.
+
 ![TryHackMe SIEM dashboard](images/TryHackMe-SIEM-dashboard.png)
+
+#### Alert Triage View
+
+The alert triage view is where you pick up an alert, review the available evidence, and decide on the next action. In practice, this means checking the alert details, validating whether the behaviour looks suspicious, updating the status, and assigning a verdict or escalating when the activity is confirmed or needs deeper investigation.
+
+![SOC L1 alert triage view](images/alert-triage.png)
