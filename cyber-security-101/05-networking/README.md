@@ -14,6 +14,12 @@ Networking concepts, protocols, and practical tools for capturing and analysing 
 
 ## Notes
 
+### Task 1 – Introduction
+
+Networking concepts, protocols, and practical tools for capturing and analysing traffic.
+
+### Task 2 – DHCP: Give Me My Network Settings
+
 A device needs three basic settings to join a network:
 
 - IP address + subnet mask
@@ -43,4 +49,26 @@ At the end of the exchange, the client has everything needed to use the network 
 - the leased IP address for this device
 - the gateway to send traffic beyond the local network
 - a DNS server to resolve hostnames into IP addresses
+
+### Task 3 – ARP: Bridging Layer 3 Addressing to Layer 2 Addressing
+
+On a local Ethernet or WiFi segment, knowing the IP address is not enough for delivery. The host must also find the MAC address for the destination, and that is what ARP (Address Resolution Protocol) does. ARP translates the target IP into a layer 2 address so the packet can be placed inside a frame.
+
+An Ethernet frame header contains:
+
+- destination MAC address
+- source MAC address
+- type field (for example, IPv4)
+
+### Task 4 – ICMP: Troubleshooting Networks
+
+*(Add ICMP troubleshooting details here.)*
+
+### Task 5 – Routing
+
+*(Add routing details here.)*
+
+### Task 6 – NAT
+
+*(Add NAT details here.)*
 
