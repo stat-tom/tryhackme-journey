@@ -73,9 +73,22 @@ These tools are valuable for verifying connectivity, identifying network problem
 
 ### Task 5 – Routing
 
-*(Add routing details here.)*
+Routing protocols help routers share information and build paths through a network. They decide how traffic moves from one place to another by exchanging details about reachable networks and the cost of each route.
+
+- `OSPF` (Open Shortest Path First): a link-state protocol where routers share the status of their directly connected links. Each router constructs a full topology map and calculates the best path to every destination.
+- `EIGRP` (Enhanced Interior Gateway Routing Protocol): a Cisco protocol that blends distance-vector and link-state features. Routers share reachable networks and route metrics like bandwidth and delay so they can select efficient paths.
+- `BGP` (Border Gateway Protocol): the main protocol for routing between different autonomous systems on the Internet. It lets networks exchange route information and choose paths for traffic that crosses multiple provider networks.
+- `RIP` (Routing Information Protocol): a simple, hop-count-based protocol best suited for small networks. Routers advertise the networks they know and choose the routes with the fewest hops.
 
 ### Task 6 – NAT
 
-*(Add NAT details here.)*
+NAT allows many internal devices to share a single public IP address for outgoing Internet access. Instead of assigning one public address to each host, a NAT router translates private IP addresses used inside the network into a public address seen by the outside world. This is why a network of twenty computers can all access the Internet through one public IP.
+
+Because IP addressing is allocated in powers of two, using NAT can save public address space. For example, a small network may only need two public addresses instead of thirty-two, which preserves the limited public pool.
+
+Unlike normal routing, NAT devices must keep track of active connections. A NAT router maintains a translation table that maps internal private addresses and ports to external public addresses and ports. Typically, the internal side uses private IP ranges, while the external side uses a public IP address.
+
+Example NAT diagram:
+
+![NAT example](nat-example.svg)
 
