@@ -62,7 +62,14 @@ An Ethernet frame header contains:
 
 ### Task 4 – ICMP: Troubleshooting Networks
 
-*(Add ICMP troubleshooting details here.)*
+ICMP (Internet Control Message Protocol) is a network-layer protocol used mostly for diagnostics and reporting problems rather than carrying user data. It helps devices tell each other when packets cannot be delivered, and it is the foundation for two common troubleshooting commands:
+
+- `ping`: sends ICMP echo requests to a target host and waits for replies. It is useful to check whether the host is reachable and to measure the round-trip time of packets.
+- `traceroute` (Linux) / `tracert` (MS Windows): discovers the path packets take from your system to a destination. Each hop along the route responds with an ICMP message, revealing the intermediate routers and where delays or failures occur.
+
+IPv4 packets include a Time-to-Live (TTL) field that limits how many routers the packet can traverse. Each router decrements the TTL by one before forwarding the packet. When TTL reaches zero, the router drops the packet and sends back an ICMP Time Exceeded message (ICMP Type 11). In this context, “time” is counted in routers crossed, not seconds.
+
+These tools are valuable for verifying connectivity, identifying network problems, and understanding the route traffic follows between hosts.
 
 ### Task 5 – Routing
 
